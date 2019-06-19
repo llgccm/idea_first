@@ -1,0 +1,159 @@
+一.常用设置
+1.设置窗口：File->Settings……
+2.通用设置：
+    2.1.主题：Appearance……->Theme:[InelliJ：白色背景/Darcula：黑色背景/Windows：操作系统风格]。
+    2.2.编辑主题：Editor->Color Schema……
+        主题下载网站：http://www.riaway.com XX.jar 通过如下步骤导入Idea中即可：
+        （File->Import Setings……->上传已下载的主题jar包->重启IDEA即可）
+    2.3.设置鼠标滚动的缩放效果：Editor->General->选中"Change font size……"。
+    2.4.设置鼠标移动悬浮的效果：Editor->General->选中"Show quick document on mouse move……"。
+    2.5.设置编辑代码时自动导入包功能(Alt + Enter)：Editor->General->Auto Import->Insert imports on paster:All
+                                        与选中如下两个选项（Add unambiguous ……及Optimize imports ……）。
+    2.6.设置方法之间的分隔符：Editor->General->Appearance->选中“Show method separators”。
+    2.7.设置忽略大小写都能够提示：Editor->General->Code Completion->Case sensitive completion:None。
+    2.8.设置多行待编辑的文件：Editor->General->Editor Tabs->取消"Show tabs in single row"选项。
+    2.9.设置字体相关的内容：Editor->Font->根据选项设置即可。
+    2.10.设置注释字体的样式：Editor->Color Schema->Language Defaults->Commerts->……。
+    2.11.设置文件头部公共信息：Editor->File and Code Template->……。
+    2.12.设置自动编译文件：Build,Excecution,Deployment……->Complie->……(一般不设置该内容项)。
+
+二.Module的操作
+1.概念：
+    1.1.Module就相当于Eclipse中的项目（Project）。
+    1.2.Idea中的Project相当于Eclipse中的工作空间（WorkSpace）。
+2.操作；
+    2.1.创建Module的步骤：右键Project->New->Module=>根据向导即可创建。
+    2.2.删除Module的步骤：
+        2.2.1.将Module格式修改为可删除状态：右键Project->Open Module Setting……=>
+                                         打开Module设置窗口，选中要设置的Module后，点击'-'即可。
+        2.2.2.右键已修改类型后的Module->delete==>即可完成删除Module的操作。
+
+三.快捷键设置
+1.操作窗口：File->Settings……->keymap。
+2.通用设置：
+    2.1.设置为引用Eclipse快捷键：keymap下拉列表选择Eclipse即可（大部分可以引用，少部分自定义的快捷键不行）。
+    2.2.导入已设置好的成熟快捷键Jar：File->Import Settings……=>根据向导操作即可。
+3.常用快捷键：
+    3.1.Alt+Enter：导入类引用路径。光标在要导入类路径的类名上，操作该快捷键。
+    3.2.Ctrl+Shift+R：搜索类及查看类源码。
+    3.3.Alt+（左右箭头）：前进或后退历史浏览记录。
+    3.4.Ctrl+Shift+F：格式化代码块。
+    3.5.Alt+Shift+R：类及方法名重命名。
+    3.6.Shift+Tab：选中整行向前移动。
+    3.7.Tab：选中整行向后移动。
+    3.9.Ctrl+Shift+Y：选中单词进行转换为大写字符。
+    3.10.Ctrl+Shift+X：选中单词进行转换为小写字符。
+    3.11.Alt+Shift+S：生成构造函数或属性的getter与setter方法等。
+    3.12.Ctrl+0：查看选中类的类结构。
+    3.13.F2：查看选中类的API说明。
+    3.14.Alt+Shift+Z：快速生成添加异常、循环及同步等操作。
+    3.15.Ctrl+F：搜索当前文件。
+    3.16.Ctrl+H：搜索项目、模块等。
+    3.17.Ctrl+ALT+M：将选中的代码块抽象为方法。
+    3.18.Ctrl+E：查看最新修改的文件列表。
+    3.19.Ctrl+Shift+V：查看本次项目编辑过程中所有使用过Ctrl+C（复制）的内容映射列表。
+
+四.代码模板定制
+1.操作窗口：File->Settings……=>Editor->Live Templates/Generak->Postfix Completion。
+2.常用模板：
+    2.1.main：生成main方法。
+
+    2.2.sout：生成System.out.println()方法。
+    2.3.soutp：生成System.out.println()带形参。
+    2.4.xxx.out：快速生成xxx的System.out.println()方法。
+    2.5.soutv：生成最近参数System.out.println()方法。
+
+    2.6.fori：生成对循环处理对象的for循环语句。
+    2.7.iter：生成对循环处理对象的增强for循环语句。
+
+    2.8.list.for：生成对list遍历的for循环语句。
+    2.9.list.fori：生成对list遍历的增强for循环语句。
+
+    2.10.ifn：快速生成if(XX == null)的语句。
+    2.11.inn：快速生成if(XX!=null)的语句。
+
+    2.12.prsf：快速生成如下语句-private static final XXX。
+
+3.自定义模板组与模板：
+    3.1.操作窗口：File->Settings……->Live Template
+    3.2.具体设置：
+                + ->2.Template Group……
+                选中刚刚创建的‘Template Group……’->1.Live Template
+                选中更改创建的‘Live Template’=>输入下方内容：
+                    Abbreviation：快捷输入短语，如：sysout    Desciption：该快捷短语的使用场景注释
+                    Template text：输入与快捷短语对应的代码块。
+                    Define：选择适应的语言场景，如：Java。
+
+五.新建Java Web项目或Module
+1.操作窗口：File->New Module。
+2.具体操作步骤：
+    2.1.静态Web：Static Web=>根据向导提示操作即可。
+    2.2.动态Web：Java->Java EE=>选中Web Application，其它根据向导提示操作即可。
+    2.3.添加Tomcat容器：Run->Edit Configurations……=>:
+        + Tomcat Server->根据向导提示操作即可。
+
+六.关联数据库
+1.操作窗口：IDEA(右边窗口)->Database。
+2.具体操作步骤：
+    2.1.+ Data Source……=>根据向导提示操作即可。
+
+七.版本控制
+1.操作窗口：File->Settings……=>Version Control。
+2.具体操作步骤（git示例）：
+    2.1.下载并安装GIT客户端：
+        A.下载客户端：
+            msysGit官网：https://git-scm.com/。
+            或者
+            TortoiseGit下载地址：http://download.tortoisegit.org/tgit/。
+        B.安装客户端：双击gitxx.ext安装程序，根据向导提示即可完成。
+    2.2.IDEA环境中引入Git配置：
+        A.File->Settings……=>Version Control->Git
+        B.Path to Git excutable：选择GIT客户端安装在本地目录中的\xx\cmd\git.exe文件。
+        C.其它根据向导提示即可完成。
+    2.3.GIT服务端仓库设置：
+        A.利用GitHub远程仓库进行管理，官网地址：https://github.com/。
+        B.注册GitHub帐号/密码：llgccm/llgccm_@#830629。
+        C.自定义资源仓库，供测试：IdeaForGithubTest。
+    2.4.IDEA环境中与Github数据仓库交互过程：
+        A.第一种方式：File->New->Project from Version Control……。
+        B.第二种方式：（工具栏）VCS->Checkout from Version Control->Git。
+        C.URL：输入Github数据参仓库中的资源目录地址（Github中Clone or download所对应的地址）。
+        D.其它根据向导提示即可完成。
+    2.5.本地代码提交至Github方法：
+        A.（工具栏）VCS->Import into Version Control->Share Project on GitHub。
+        B.其它根据向导提示即可完成。
+    2.6.日常Git操作：与SVN相似，此处不再记录。
+
+八.断点调式
+1.操作窗口：
+2.具体操作步骤：
+
+九.Maven配置与使用
+1.操作窗口：
+2.具体操作步骤：
+
+十.其它
+1.操作窗口：
+2.具体操作步骤：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
