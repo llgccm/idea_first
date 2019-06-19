@@ -112,7 +112,7 @@
         C.其它根据向导提示即可完成。
     2.3.GIT服务端仓库设置：
         A.利用GitHub远程仓库进行管理，官网地址：https://github.com/。
-        B.注册GitHub帐号/密码：llgccm/llgccm_@#830629。
+        B.注册GitHub帐号/密码：。
         C.自定义资源仓库，供测试：IdeaForGithubTest。
     2.4.IDEA环境中与Github数据仓库交互过程：
         A.第一种方式：File->New->Project from Version Control……。
